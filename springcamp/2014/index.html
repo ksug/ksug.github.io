@@ -1,56 +1,587 @@
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Spring Camp 2014</title>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aviators - byaviators.com">
 
-    <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet"/>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/fullwidth.css" type="text/css">    
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="assets/icons/pictopro-normal/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/icons/pictopro-outline/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/infine.css" type="text/css">
+
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-<body>
-  
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">Spring Camp</h3>
-            <ul class="nav masthead-nav">
-              <li class="active"><a href="#">About</a></li>
+       	<link rel="stylesheet" id="ie8-css"  href="assets/css/ie8.css" type="text/css" media="all">
+	<![endif]-->
+
+	<title>SpringCamp 2014</title>
+</head>
+<body data-spy="scroll" data-target=".main-navigation">
+
+<div class="navigation">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+
+                <div class="logo">
+                    <a href="#nav-header" class="roll"><img src="assets/img/logo.png" class="logo-icon" style='width: 40px; margin-top: 5px'/><span>Spring Camp 2014</span></a>
+                </div><!-- /.logo -->
+
+                <div class="main-navigation nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#nav-header">Home</a></li>
+                        <li><a href="#nav-speakers">Program</a></li>
+                        <li><a href="#nav-pricing">Registration</a></li>
+                        <li><a href="#nav-contact">Information</a></li>
+                    </ul>
+                </div><!-- /.main-navigation -->
+            </div><!-- /.container -->
+        </div><!-- /.navbar-inner -->
+    </div><!-- /.main-navigation -->
+</div><!-- /.navigation -->
+
+<div id="nav-header" class="header-wrapper">
+    <div class="header">
+        <div class="fullwidthbanner-container">         
+           <div class="fullwidthbanner">
+                <ul class="unstyled">
+                    <li class="first-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-1.jpg" data-fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="200" data-speed="900" data-start="0" data-easing="easeOutBack" fullwidthcentering="on">
+                            <div class="header-item">
+                                <div>
+                                    <h1>Spring Camp 2014</h1>
+                                    <h4>2014년 5월 31일 12:00 ~ 18:00</h4>
+                                </div><!-- /.title -->
+                            </div><!-- /.header-item -->
+
+                            <div class="countdown wrapper">
+                                <div class="countdown-container">
+                                    <div class="clock row">
+
+                                        <div class="clock-item clock_days countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_days"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_days type-time">DAYS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item  clock_hours countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_hours"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_hours type-time">HOURS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_minutes countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_minutes"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_minutes type-time">MINUTES</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_seconds countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_seconds"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_seconds type-time">SECONDS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+                                    </div><!-- /.countdown-container -->
+
+                                    <div class="clock-done">
+                                        <p>We have started!</p>
+                                        <a href="#" class="btn btn-primary btn-start">Watch the live stream <i class="icon icon-normal-right-arrow-circle"></i></a>
+                                    </div><!-- /.clock-done -->
+                                </div><!-- /.countdown-container -->
+                            </div><!-- /.countdown -->
+                        </div><!-- /.caption -->
+                    </li>
+                </ul><!-- /.revolution -->
+           </div>        
+        </div>
+    </div><!-- /.header -->
+</div><!-- /.header-wrapper -->
+
+<div id="nav-features" class="features-wrapper">
+    <div class="features">
+        <div class="features-inner container">
+            <div class="row">
+                <div class="item orange span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-rss"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3 pull-right">
+                            <h3>공유</h3>
+
+                            <p class="features-description">
+                                기술, 도구, 자기개발에 대해 연사들의 경험과 노하우를 듣고 다양한 이야기를 나눌 수 있는 자리
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item blue span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-group-three"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>인연</h3>
+
+                            <p class="features-description">
+                                다양한 개발자들과 만남을 통해 새로운 선배, 후배, 친구를 사귀는 자리
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item yellow span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-drink"></i>
+							</div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>축제</h3>
+
+                            <p class="features-description">
+                                맛있는 먹거리와 함께 이야기를 나눌 수 있는 장소에서 웃고- 떠들고- 즐기는 축제의 자리
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.features-inner -->
+    </div><!-- /.features -->
+</div><!-- /.features-wrapper -->
+
+<div id="nav-speakers" class="speakers-wrapper">
+    <div class="container">
+        <h2>프로그램(Program)</h2>
+        <h4>캠프에서 만날 수 있는 발표와 연사님을 소개합니다.</h4>
+
+        <div class="speakers">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab">Ferrum Hall</a></li>
+                <li><a href="#tab-2" data-toggle="tab">Seminar Room</a></li>
             </ul>
-          </div>
-        </div>
 
-        <div class="inner cover">
-          <h1 class="cover-heading">Spring Camp 2014</h1>
-          <p class="lead">스프링 캠프는 애플리케이션 서버 개발자들과 함께 기술적으로 가치있는 내용을 공유하며, 나를 소개하고 새로운 인연의 고리를 만드는 개발자 축제입니다.</p>
-        </div>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-1">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-1.jpg" alt="">
+                            </div><!-- /.image-box -->
+                        </div><!-- /.image -->
 
-        <div class="mastfoot">
-          <div class="inner">
-            <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          </div>
+                        <div class="span7">
+                            <p class="name">박용권</p>
+                            <p class="company">KSUG</p>
+                            <p class="talk-title">고양이는 내 운명!</p>
+                            <p class="time"><span class="time-start">08:00</span> - 08:45</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>About 권</h4>
+								<p>서버사이드 영역을 중심으로 관련 기술과 애플리케이션 아키텍처에 관심이 많이 가지고 있고 최근에는 Data API Layer라는 추상 아이디어를 실체화 시키려고 노력중입니다. 따뜻한 햇살과 산들산들 시원한 바람이 머문 곳에서 코딩과 요리, 그리고 고양이와 함께 살아가고픈 소박한 꿈이 있는 개발자입니다. :3</p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                   
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-2.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">김지헌</p>
+                            <p class="company">KSUG</p>
+                            <p class="talk-title">스쿠버다이빙 마스터로 가는 길</p>
+                            <p class="time"><span class="time-start">09:00</span> - 09:45</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>About 헌</h4>
+								<p>취미생활(스쿠버다이빙, 자전거 여행, 스포츠 클라이밍)을 즐기기 위한 자금을 마련하기 위해 개발을 부업으로 하고 있는 개발자.</p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                    
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-3.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">변정훈</p>
+                            <p class="company">SK planet</p>
+                            <p class="talk-title">초급 개발자 탈출하기</p>
+                            <p class="time"><span class="time-start">10:00</span> - 10:45</p>
+                        </div><!-- /.span7 -->
+                        <div class="span3">
+							<div class="about">
+								<h4>About 훈</h4>
+								<p>코딩을 좋아하는 프로그래머로 웹에서 프론트엔드와 백엔드까지 모두 아우르는 풀스택 개발자를 지향하고 있습니다. 프로그래밍관련 다양한 기술에 관심을 많이 가지고 있고 기술 공유나 글쓰는 것도 즐겨해서 블로그도 운영하고 있습니다. 잉여력을 발휘해서 코드를 작성하는 것을 좋아하기 때문에 많은 커피숍을 전전하고 글을 쓰거나 코드를 작성하고 있습니다.</p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                </div><!-- /.tab-1 -->
+                
+
+                <div class="tab-pane fade" id="tab-2">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-1.jpg" alt="">
+                            </div><!-- /.image-box -->
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">박용권</p>
+                            <p class="company">KSUG</p>
+                            <p class="talk-title">고양이는 내 운명!</p>
+                            <p class="time"><span class="time-start">08:00</span> - 08:45</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+                            <div class="about">
+                                <h4>About 권</h4>
+                                <p>서버사이드 영역을 중심으로 관련 기술과 애플리케이션 아키텍처에 관심이 많이 가지고 있고 최근에는 Data API Layer라는 추상 아이디어를 실체화 시키려고 노력중입니다. 따뜻한 햇살과 산들산들 시원한 바람이 머문 곳에서 코딩과 요리, 그리고 고양이와 함께 살아가고픈 소박한 꿈이 있는 개발자입니다. :3</p>
+                            </div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                   
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-2.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">김지헌</p>
+                            <p class="company">KSUG</p>
+                            <p class="talk-title">스쿠버다이빙 마스터로 가는 길</p>
+                            <p class="time"><span class="time-start">09:00</span> - 09:45</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+                            <div class="about">
+                                <h4>About 헌</h4>
+                                <p>취미생활(스쿠버다이빙, 자전거 여행, 스포츠 클라이밍)을 즐기기 위한 자금을 마련하기 위해 개발을 부업으로 하고 있는 개발자.</p>
+                            </div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                    
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/profile/speakers-3.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">변정훈</p>
+                            <p class="company">SK planet</p>
+                            <p class="talk-title">초급 개발자 탈출하기</p>
+                            <p class="time"><span class="time-start">10:00</span> - 10:45</p>
+                        </div><!-- /.span7 -->
+                        <div class="span3">
+                            <div class="about">
+                                <h4>About 훈</h4>
+                                <p>코딩을 좋아하는 프로그래머로 웹에서 프론트엔드와 백엔드까지 모두 아우르는 풀스택 개발자를 지향하고 있습니다. 프로그래밍관련 다양한 기술에 관심을 많이 가지고 있고 기술 공유나 글쓰는 것도 즐겨해서 블로그도 운영하고 있습니다. 잉여력을 발휘해서 코드를 작성하는 것을 좋아하기 때문에 많은 커피숍을 전전하고 글을 쓰거나 코드를 작성하고 있습니다.</p>
+                            </div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                </div><!-- /.tab-2 -->
+                
+            </div><!-- /.tab-content -->
+        </div><!-- /.speakers -->
+    </div><!-- /.container -->
+</div><!-- /.speakers-wrapper -->
+
+<div class="content-wrapper">
+    <div class="content">
+        <div class="content-inner">
+			<div class="container">
+				<div class="cycle-slideshow-fade">
+					<div class="cycle-pager"></div>
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-wrapper image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/1.jpg" alt="Spring Camp">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">Spring Camp</h2>
+                                    <h4 class="">"공유", "인연", "축제"</h4>
+                                    <p>스프링 캠프는 애플리케이션 서버 개발자들과 함께 기술적으로 가치있는 내용을 공유하며, 나를 소개하고 새로운 인연의 고리를 만드는 개발자 축제입니다.</p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+						
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/2.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">가치있는 기술을 공유하다</h2>
+                                    <h4 class="">Spring Camp 2013 with Scala</h4>
+                                    <p>변화하는 스프링의 모습과 더불어 빅데이터를 대하는 전략, Restful 웹 서비스 그리고 엔터프라이즈 애플리케이션 개발에 도움을 줄 수 있는 기술과 아키텍처, 경험 등 현장에서 가치를 만들어 낼 수 있는 실용적인 솔루션을 공유합니다.</p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/3.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">새로운 인연의 고리를 만들다</h2>
+                                    <h4 class="">Spring Camp 2013 with Scala를 마치고...</h4>
+                                    <p>같은 일을 하고, 같은 관심사를 가진 개발자들이지만 우린 서로를 알지 못 합니다. 우리들이 관심을 가지고 있는 가치를 투명하게 나누고 공유하는 것을 가로 막고 있는건 '어색함'이 아닐까요? 서로의 이름을 주고 받고 악수하는 것을 시작으로 새로운 친구, 선배, 후배를 만들고, 웃고 떠들며 즐기는 시간이 되었으면 좋겠습니다.</p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/4.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">좋은 개발자로 성장하려면...</h2>
+                                    <h4 class="">Spring Camp 2014 회의록</h4>
+                                    <p>좋은 개발자란....?</p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+				</div><!-- ./cycle-slideshow-fade -->
+			</div><!-- /.container -->
+		</div><!-- /.content-inner -->
+    </div><!-- /.content -->
+</div><!-- /.content-wrapper -->
+
+<div id="nav-pricing" class="pricing-wrapper">
+    <div class="pricing">
+        <div class="pricing-inner">
+			<div class="container has-options">
+				<h2>참가등록(Registration)</h2>
+				<h4>스프링캠프는 5월 12일부터 참가등록을 받습니다.</h4>
+
+				<div class="tab-pane fade in active" id="tab-3-pricing">
+					<div class="container">
+						<div class="row">
+							<div class="span4"></div>
+							<div class="span4">
+								<div class="square">
+									<div class="content best-offer">
+										<p class="price">Spring Camp 2014</p>
+										<ul class="span3 item">
+											<li>2014/05/31(토)</li>
+											<li>12:00 ~ 18:00</li>
+											<li>을지로입구역 4번출구 페럼타워 3층</li>
+                                            <li>약 300명 참석가능</li>
+										</ul>
+                                        <!--
+										<a class="btn btn-buy">등록하기</a>
+                                        -->
+                                    </div><!-- /.content -->
+                                </div><!-- /.square -->
+							</div>
+							<div class="span4"></div>
+						</div><!-- /.row-->
+					</div><!-- /.container -->
+				</div><!-- /.tab-3 -->
+			</div>
+		</div><!-- /.pricing-inner -->
+    </div><!-- /.pricing -->
+</div><!-- /.pricing-wrapper -->
+
+<hr>
+
+<div class="our-partners-wrapper">
+    <div class="our-partners container">
+        <div class="our-partners-inner">
+            <h2>후원사(Sponsors)</h2>
+            <h4>캠프는 커뮤니티를 주축으로 자원봉사자들의 힘으로 진행되고 있으며 그 노력을 응원하는 후원사들의 도움을 받고 있습니다.</h4>
+
+            <div class="row">
+                <div class="span3 center">
+                    <a href="http://www.nipa.kr/main.it" target="_blank"><img class="our-partners-logo" src="assets/sponsors/sponsor_nipa.gif" alt=""></a>
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                    
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                    
+                </div><!-- /.span3 -->
+
+                <div class="span3 center">
+                    
+                </div><!-- /.span3 -->
+            </div><!-- /.row -->
+        </div><!-- /.our-partners-inner -->
+    </div><!-- /.our-partners -->
+</div><!-- /.our-partners-wrapper -->
+
+<div id="nav-contact" class="footer-wrapper">
+    <div class="footer container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="item span6">
+                    <h2>장소(Location)</h2>
+                    <address>
+                        <i class="icon icon-normal-pointer"></i><span class="title"><strong>페럼타워</strong></span>
+                        <p>서울특별시 중구 수하동 페럼타워 3층</p>
+                        <p>2호선 을지로입구역 3번 또는 4번 출구를 나와서 이동</p>
+                    </address>
+                </div><!-- /.item -->
+                <div class="item span6">
+                    <h2>연락처(Contact us)</h2>
+                    
+                    <address>
+                        <i class="icon icon-normal-mail"></i><a href="mailto:springcamp@ksug.org" class="e-mail">springcamp@ksug.org</a><br>
+                    </address>
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.footer-inner -->
+    </div><!-- /.footer -->
+
+    <div class="footer container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="item span4">
+                    <address>
+                        <i class="icon icon-normal-map-pointer"></i><span class="title"><strong>찾아오시는 길</strong></span>
+                    </address>
+                </div>
+                <div class="item span8"></div>
+            </div><!-- /.row -->            
         </div>
-      </div>
+        <div id="map"></div><!-- /#map -->
     </div>
-  </div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="copyright span9">
+                    &copy; 2014 Copyright by <a href="http://ksug.org/springcamp/2014" class="">Spring Camp</a>
+                </div><!-- /.copyright -->
+
+                <div class="icons">
+                    <a href="https://twitter.com/home?status=http://ksug.org/springcamp/2014/" target="_blank" class="social-icon"><img src="assets/icons/icon-twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://ksug.org/springcamp/2014/" target="_blank" class="social-icon"><img src="assets/icons/icon-facebook.png" alt=""></a>
+                </div><!-- /.icons -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.footer bottom -->
+</div><!-- /.footer-wrapper -->
+
+
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script type="text/javascript" src="assets/js/kinetic.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/placeholder.js"></script>
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.center.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.scrollVert.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.caption2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="assets/fancybox/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<script type="text/javascript" src="assets/js/infine.js"></script>
 
 </body>
 </html>
