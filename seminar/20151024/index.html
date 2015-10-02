@@ -157,13 +157,13 @@
                             </tr>
                             <tr>
                                 <td>13:30 ~ 14:20</td>
-                                <td><a data-toggle="modal" data-target="#modalSpring4xWeb">Spring 4.x Web Application <i class="fa fa-external-link-square"></i></i></a></td>
+                                <td><a data-toggle="modal" data-target="#modalSpring4xWeb">Spring 4.x Web Application <i class="fa fa-external-link-square"></i></a></td>
                                 <td>김지헌&nbsp;&nbsp;<a href="http://honeymon.io"><i class="fa fa-newspaper-o"></i></a></td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>14:30 ~ 15:20</td>
-                                <td><a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/view.html#view-script">JSR-223 script engine in web applications using Spring (가제) <i class="fa fa-link"></i></i></a></td>
+                                <td><a href="http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/view.html#view-script">JSR-223 script engine in web applications using Spring (가제) <i class="fa fa-link"></i></a></td>
                                 <td>정성용&nbsp;&nbsp;<a href="https://www.facebook.com/sungyong.jung?fref=ts"><i class="fa fa-facebook-square"></i></a></td>
                                 <td>-</td>
                             </tr>
@@ -175,13 +175,13 @@
                             </tr>
                             <tr>
                                 <td>16:00 ~ 16:50</td>
-                                <td><a href="http://projects.spring.io/spring-restdocs/">Making your API easy to document with Spring REST Docs <i class="fa fa-link"></i></i></a></td>
+                                <td><a data-toggle="modal" data-target="#modalRestdocs">Making your API easy to document with Spring REST Docs <i class="fa fa-external-link-square"></i></a></td>
                                 <td>김대성&nbsp;&nbsp;<a href="mailto:gmind7@gmail.com"><i class="fa fa-envelope-o"></i></a></td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>17:00 ~ 17:50</td>
-                                <td><a data-toggle="modal" data-target="#modalVaddin">스크립트 없는 자바 웹 애플리케이션 만들기 <i class="fa fa-external-link-square"></i></i></a></td>
+                                <td><a data-toggle="modal" data-target="#modalVaddin">스크립트 없는 자바 웹 애플리케이션 만들기 <i class="fa fa-external-link-square"></i></a></td>
                                 <td>이재일&nbsp;&nbsp;<a href="http://learingvaadin.wordpress.com/"><i class="fa fa-newspaper-o"></i></a>&nbsp;<a href="https://www.facebook.com/groups/vaadinkorea/"><i class="fa fa-facebook-square"></i></a></td>
                                 <td>-</td>
                             </tr>
@@ -270,6 +270,27 @@
           2015년 7월 31일 Spring Framework 4.2가 출시되었습니다.<br/><br/>
           <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS(Cross-origin resource sharing)</a>, <a href="http://www.w3.org/TR/eventsource/">Server-Sent Events</a> 지원과 비동기 요청 처리를 위한 기능 확장, RestTemplate의 <a href="http://square.github.io/okhttp/">OkHttp</a> 통합, 그리고 자바 8의 새 자바스크립트 엔지 나즈혼(Nashorn)을 활용한 ScriptTemplateView까지 최신 웹 경향을 반영한 다양한 기능들이 추가되었습니다.<br/><br/>
           이 세션에서는 Spring 4.x 버전의 웹 기능들을 살펴보는 자리를 만들고자 합니다.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal fade" id="modalRestdocs" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="닫기"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Making your API easy to document with Spring REST Docs / 김대성</h4>
+        </div>
+        <div class="modal-body">
+          RESTful API를 제공 하면서 API 문서를 항상 만들었습니다.<br/>
+          시간이 지남에 따라 제공된 API의 기능들은 추가 되거나 변경/삭제 되어 갔지만, 그에 반해 API 문서는 관리 소홀로 결국에는 불일치(API!=DOC)되면서 겪게 되는 API 문서 관리의 어려움을 우리는 자주 만나고 있습니다.<br/><br/>
+          현재 한참 개발이 진행중인 스프링 프로젝트 중 <a href="http://projects.spring.io/spring-restdocs">Spring REST Docs</a>를 사용해 API 문서를 손쉽게 자동으로 생성하고, 테스트까지 함께 할 수 있는 지에 대한 경험을 공유하고자 합니다.<br/>
+          Swagger를 넘어 이제는 Spring REST Docs으로...<br/><br/>
+          이 세션에서는 Spring REST Docs + MVC Test 두 마리 토끼를 한번에 잡을 수 있는 방법을 살펴보고자 합니다.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
