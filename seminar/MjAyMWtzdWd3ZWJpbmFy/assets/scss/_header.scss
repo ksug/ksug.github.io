@@ -1,0 +1,174 @@
+
+/*===================Header Style===============*/
+
+header.header-area{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0px 15px;
+    
+    nav.main-nav {
+        margin-left: auto;
+    }
+        .sm-mint{
+            
+           /*  .nav-item.active{
+
+                .nav-link{
+                    color: #ff007a;
+                }
+            } */
+            li{
+                a{
+                    &:focus{
+                        color: #000000;
+                    }
+                }
+              
+         
+               
+            }
+        }
+        .event-navber {
+            position: relative;
+            display: flex;
+
+            .header-ticket {
+                position: relative;
+
+                .btn-1{
+                    padding: 12px 25px;
+                    margin-left: 15px;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+            .btn-1.blue{
+                position: relative;
+                background: #27bdb5;
+                transition: .5s ease !important;
+
+                &::before{
+                    position: absolute;
+                    display: none;
+                }
+    
+                &:hover{
+                    background: #1a41c9;
+                }
+            }
+        
+        }
+     
+   
+}
+header.header-area.nav-fixed {
+    position: fixed !important;
+    z-index: 99 !important;
+    top: 0;
+    animation-duration: 0.8s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0px 13px 35px -12px rgba(35,35,35,0.15);
+    background: #fff;
+
+  .sm-mint{
+
+    li{
+
+        .a {
+            color: #000000;
+
+            &:hover{
+                color: #ff007a;
+            }
+
+           
+        }
+        
+        .btn-2{
+            color: #fff;
+            margin-left: 15px;
+            &:hover{
+                color: #fff;
+            }
+        }
+ 
+       
+    }
+}
+.btn-1.blue{
+    color: #fff;
+    background: #27bdb5;
+    transition: .5s ease !important;
+
+    &:hover{
+        background: #1a41c9;
+    }
+}
+.btn-1{
+    color: #fff;
+    margin-left: 15px;
+    &:hover{
+        color: #fff;
+    }
+}
+    
+}
+
+header.header-area.error {
+
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0px;
+
+ 
+    .sm-mint{
+
+        >li{
+    
+            >.a {
+                color: #000000;
+    
+                &:hover{
+                    color: #ff007a;
+                }
+    
+               
+            }
+            
+           
+           
+        }
+    }
+
+    .btn-2{
+        color: #fff;
+        margin-left: 15px;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .btn-2.blue{
+        color: #fff;
+        background: #27bdb5;
+    }
+    .btn-1{
+        color: #fff;
+        margin-left: 15px;
+        &:hover{
+            color: #fff;
+        }
+    }
+    
+}
+/*===================End Header Style===============*/

@@ -1,0 +1,296 @@
+/*----------------------------------------*/
+/*  Eventdia RTL Style
+/*----------------------------------------*/
+
+html[dir="rtl"] {
+
+    
+    section.hero-1 .hero-slide1 .slide::before {
+        
+        left: 0;
+        right: 0;
+    }
+    section.hero-1 .hero-slide1 .slide .hero-slide-wrapper .hero-slide-content {
+        
+        text-align: right;
+    }
+    .nav-brand {
+        float: right;
+    }
+    section.about-section .amout-img {
+        margin-left: 0;
+        margin-right: -25%;
+    }
+    section.about-section .about-content {
+        position: relative;
+        padding-top: 50px;
+        text-align: right;
+    }
+    section.about-section .amout-img::before {
+        left: unset;
+        right: -7%;
+        z-index: -1;
+    }
+    section.schedule .event-schedule .tab-content .tab-pane .event-details .ed-content {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+    section.pricing .modal .modal-content .modal-header button.close {
+        margin-right: auto;
+    }
+    .modal-header .close {
+        margin: 0;
+    }
+    section.blog .single-blog .sb-content {
+        text-align: right;
+    }
+    section.schedule .event-schedule nav .nav-tabs .nav-link .es-day .es-day-details {
+      
+        margin-left: 20px;
+    }
+    section.counter #clockdiv {
+        margin-right: 10%;
+    }
+    section.ab-section2 .amout-img {
+        margin-right: 0;
+    }
+    section.hero-3 .hero-content {
+        text-align: right;
+    }
+    section.hero-3 .hero-content span {
+        padding-bottom: 10px;
+        display: block;
+    }
+    section.hero-3 .hero-3-img {
+        right: 0;
+    }
+    section.event-outcome .single-e-out {
+        text-align: right;
+    }
+    section.fun-fact .single-fune-fact {
+        text-align: right;
+    }
+    section.fun-fact::before {
+        right: 0;
+    }
+    section.hero-4 .hero-content {
+        text-align: right;
+    }
+    section.hero-4 .hero-content span {
+        padding-bottom: 10px;
+        display: block;
+    }
+    rs-layer-wrap, rs-mask-wrap, rs-cbg-mask-wrap {
+        direction: ltr;
+    }
+    
+    rs-sbg-px, rs-sbg-wrap {
+        direction: ltr;
+    }
+    section.inner-hero2::before {
+        right: 0;
+    }
+    section.inner-hero::before {
+        right: 0;
+    }
+    .blog-sideber .recent-post {
+        text-align: right;
+    }
+    .blog-sideber .recent-post .single-recent-blog .srb-text {
+       
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    .blog-sideber .catagory {
+        text-align: right;
+    }
+    .blog-sideber .archived {
+        text-align: right;
+    }
+    .blog-sideber .tag {
+        text-align: right;
+    }
+    section.blog-3 .single-blog .blog-reviews ul {
+        text-align: right;
+    }
+    section.contact-us .contact-details {
+        text-align: right;
+    }
+    section.contact-us .contact-information {
+        text-align: right;
+    }
+    section.faq .card .card-block {
+        text-align: right;
+    }
+    section.blog-3 .sbd-info {
+        text-align: right;
+    }
+    section.blog-3 .blog-comment {
+        text-align: right;
+    }
+    section.blog-3 .blog-comment .single-blog-comment .sbc-text {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    section.blog-3 .get-a-comment {
+        text-align: right;
+    }
+    section.inner-hero .ih-content nav ol.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      
+        padding-right: 0;
+        padding-left: .5rem;
+    }
+    section.speaker-details .sd-text {
+        text-align: right;
+    }
+    section.speaker-details .sd-img {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    section.speaker-details .sd-img::before {
+
+        left: unset;
+        right: -10%;
+    }
+    section.speaker-details .icon {
+        text-align: right;
+    }
+    section.venue .about-venu {
+        text-align: right;
+    }
+    section.venue .about-venu p {
+        padding-right: 0;
+        padding-left: 15%;
+    }
+    section.hero-2 {
+        overflow: hidden;
+    }
+    section.partner3::after {
+        left: 20px;
+    }
+
+
+
+
+}
+
+
+/*----------------------------------------*/
+/*  Eventdia RTL Style END
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*  Eventdia RTL Responsive Style
+/*----------------------------------------*/
+html[dir="rtl"] {
+
+
+    @media only screen and (max-width: 1715px){
+
+    
+    
+    }
+    
+    @media only screen and (max-width: 1500px){
+
+
+    
+    }
+
+    
+
+
+
+
+
+
+    @media only screen and (max-width: 1400px){
+
+       
+    
+    }
+
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+
+    .sm-mint a {
+        padding: 14px 18px;
+    }
+    
+    }
+    
+@media only screen and (max-width: 1199px){
+
+  
+
+
+}
+    @media only screen and (max-width: 991px){
+
+a.btn-2 {
+    font-size: 14px;
+    padding: 10px 30px;
+}
+       
+
+}
+@media only screen and (max-width: 767px){
+
+    header.header-area nav.main-nav {
+        margin-right: auto;
+        margin-left: unset;
+    }
+    section.about-section .amout-img {
+        margin-right: 0;
+    }
+    section.schedule .event-schedule .tab-content .tab-pane .event-details .ed-img {
+        width: 50%;
+    }
+    section.counter #clockdiv {
+        margin-right: 0;
+    }
+    section.hero-3 {
+        overflow: hidden;
+    }
+    section.fun-fact .single-fune-fact {
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 575px){
+
+
+
+}
+@media only screen and (max-width: 480px){
+
+ 
+
+}
+
+@media only screen and (max-width: 360px){
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/*----------------------------------------*/
+/*  Maxtreo RTL Responsive Style End
+/*----------------------------------------*/
