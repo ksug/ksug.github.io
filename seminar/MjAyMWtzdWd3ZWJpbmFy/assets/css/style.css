@@ -3806,6 +3806,11 @@ Responsive Style
   section.our-team::before {
     display: none; }
 
+  section.about-section .about-content .large-text {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  
   section.about-section .about-content p {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -4209,9 +4214,10 @@ Responsive Style
     padding: 170px 0px 120px; }
 
   section.hero-1 .hero-slide1 .hero-slide-wrapper .hero-slide-content p {
+    font-size: 24px; 
     width: 100%;
     padding: 25px 35px 35px 0px; }
-
+  
   a.btn-1 {
     font-size: 12px;
     padding: 10px 20px; }
